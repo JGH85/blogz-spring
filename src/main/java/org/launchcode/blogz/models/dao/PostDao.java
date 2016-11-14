@@ -19,6 +19,10 @@ public interface PostDao extends CrudRepository<Post, Integer> {
     
     //findallposts
     List<Post> findAll();
+    
+    List<Post> findAllByOrderByCreatedDesc();
+
+    
 
     
     //find posts by title

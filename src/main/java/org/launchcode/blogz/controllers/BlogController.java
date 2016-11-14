@@ -27,7 +27,7 @@ public class BlogController extends AbstractController {
 	public String blogIndex(Model model) {
 		
 		// TODO - fetch posts and pass to template
-		List<Post> posts = postDao.findAll();
+		List<Post> posts = postDao.findAllByOrderByCreatedDesc();
 		model.addAttribute("posts", posts);
 		return "blog";
 	}
