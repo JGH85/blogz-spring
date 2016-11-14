@@ -7,6 +7,7 @@
 <div th:replace="template :: navigation"></div>
 
 <h1>blog posts!</h1>
+<!-- <h1 th:text="'Blog Posts by ' + ${post.author.username}" >blog posts!</h1> -->
 
 <div th:each="post : ${posts}">
 
